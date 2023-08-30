@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Kompiuteriai</h1>
+<p>Mūsų kompiuteriu sąrašas:</p>
+<ul>
+    {% for kompiuteris_o in kompiuteriai_visos_eilutes_t %}
+        <li><a href="{% url 'kompiuteris-vienas-url' kompiuteris_o.id %}">{{ kompiuteris_o.pavadinimas }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

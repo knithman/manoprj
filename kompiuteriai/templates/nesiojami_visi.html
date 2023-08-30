@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Nesiojami kompiuteriai</h1>
+<p>Mūsų nesiojamų kompiuterių sąrašas:</p>
+<ul>
+    {% for nesiojamas_o in nesiojami_visos_eilutes_t %}
+        <li><a href="{% url 'kompiuteris-vienas-url' nesiojamas_o.id %}">{{ nesiojamas_o.kompiuteris }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

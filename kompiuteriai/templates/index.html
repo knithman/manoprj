@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Kompiuteriu portalas</h1>
+<p>Sveiki atvykę į kompiuteriu rojų!</p>
+<p>Šiuo metu turime:</p>
+<ul>
+    <li>Kompiuteriu: {{ num_kompiuteriai_t }}</li>
+    <li>Stacionarus: {{ num_stacionariu_t }}</li>
+    <li>Nesiojamu: {{ num_nesiojami_t }}</li>
+</ul>
+{% endblock %}
